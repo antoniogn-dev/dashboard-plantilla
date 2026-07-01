@@ -13,6 +13,7 @@ import HomePage from "./pages/admin/HomePage"
 import ChatPage from "./pages/admin/Chat"
 
 import ErrorPage from "./pages/ErrorPage"
+import ForgetPassword from "./pages/auth/ForgetPassword"
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/auth" element={<LayoutAuth />}>
           <Route index element={<Login />} />
           <Route path="registro" element={<Register />} />
+          <Route path="olvide-password" element={<ForgetPassword />} />
         </Route>
 
         <Route path="/" element={<LayoutAdmin />}>
