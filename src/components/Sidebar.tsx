@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { RiBarChart2Line, RiEarthLine, RiMailOpenLine, RiCalendar2Line, RiLogoutBoxRLine, RiArrowDropRightLine, RiMenuFill, RiCloseLargeLine } from "react-icons/ri"
+import { RiBarChart2Line, RiEarthLine, RiHeadphoneLine, RiCalendar2Line, RiLogoutBoxRLine, RiArrowDropRightLine, RiMenuFill, RiCloseLargeLine } from "react-icons/ri"
 import { useState } from "react"
 
 const Sidebar = () => {
@@ -51,7 +51,7 @@ const Sidebar = () => {
                         </li>
 
                         <li>
-                            <Link to="/" className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"><RiMailOpenLine className="text-primary" /> Mensajes</Link>
+                            <Link to="/" className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"><RiHeadphoneLine className="text-primary" /> Soporte Técnico</Link>
                         </li>
 
                         <li>
