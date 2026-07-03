@@ -15,7 +15,7 @@ const Sidebar = () => {
                     {/* Logo */}
                     <div className="flex items-center justify-center gap-2 mb-10">
                         <img src="/logo.svg" alt="logo" className="h-8 w-8" />
-                        <h1 className="text-center text-2xl font-bold text-white flex items-center">AntonioDev<span className="text-primary text-4xl flex items-center">.</span></h1>
+                        <h1 className="text-center text-2xl font-bold text-white/80 flex items-center">AntonioDev</h1>
                     </div>
 
                     {/* Navegacion */}
