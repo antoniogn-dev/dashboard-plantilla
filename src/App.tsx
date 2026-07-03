@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 
 // Pages LAYOUT
-import LayoutAuth from "./layout/LayoutAuth"
 import LayoutAdmin from "./layout/LayoutAdmin"
 
 // Pages AUTH
@@ -14,6 +13,7 @@ import ChatPage from "./pages/admin/Chat"
 
 import ErrorPage from "./pages/ErrorPage"
 import ForgetPassword from "./pages/auth/ForgetPassword"
+import Profile from "./pages/admin/Profile"
 
 
 const App = () => {
@@ -21,15 +21,14 @@ const App = () => {
     <>
       <Routes>
 
-        <Route path="/auth" element={<LayoutAuth />}>
-          <Route index element={<Login />} />
-          <Route path="registro" element={<Register />} />
-          <Route path="olvide-password" element={<ForgetPassword />} />
-        </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Register />} />
+        <Route path="/olvide-password" element={<ForgetPassword />} />
 
         <Route path="/" element={<LayoutAdmin />}>
           <Route index element={<HomePage />} />
           <Route path="chat" element={<ChatPage />} />
+          <Route path="perfil" element={<Profile />} />
         </Route>
 
         <Route path="*" element={<ErrorPage />} />
