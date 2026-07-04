@@ -14,6 +14,7 @@ import ChatPage from "./pages/admin/Chat"
 import ErrorPage from "./pages/ErrorPage"
 import ForgetPassword from "./pages/auth/ForgetPassword"
 import Profile from "./pages/admin/Profile"
+import Tikets from "./pages/admin/Tikets"
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path="chat" element={<ChatPage />} />
           <Route path="perfil" element={<Profile />} />
+          <Route path="tikets" element={<Tikets />} />
         </Route>
 
         <Route path="*" element={<ErrorPage />} />

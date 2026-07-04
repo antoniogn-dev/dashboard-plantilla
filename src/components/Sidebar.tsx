@@ -51,7 +51,7 @@ const Sidebar = () => {
                         </li>
 
                         <li>
-                            <Link to="/" className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"><RiHeadphoneLine className="text-primary" /> Soporte Técnico</Link>
+                            <Link to="/tikets" className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"><RiHeadphoneLine className="text-primary" /> Soporte Técnico</Link>
                         </li>
 
                         <li>
