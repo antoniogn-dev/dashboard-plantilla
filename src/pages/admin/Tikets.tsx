@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import { RiFilter2Fill, RiSearch2Line } from "react-icons/ri"
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import { RiFilter2Fill, RiSearch2Line, RiArrowRightLongFill, RiArrowUpSLine } from "react-icons/ri"
+import { Tab, TabGroup, TabList, TabPanel, TabPanels, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 
 const Tikets = () => {
     return (
@@ -63,13 +63,43 @@ const Tikets = () => {
 
 
                 </div>
-                <TabPanels>
+                <TabPanels className="mt-8">
                     <TabPanel>
-                        <div className="grid grid-cols-1 md:grid-cols-2">
-                            <div>
-                                Popular Tikets
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                            {/* tikets */}
+                            <div className="bg-secondary-100 p-8 rounded-xl">
+                                <div className="flex items-center justify-between">
+                                    <h1 className="text-gray-100 text-2xl mb-8">Popular tikets</h1>
+                                    <Link className="flex items-center text-primary gap-2" to="/">Support <RiArrowRightLongFill /></Link>
+                                </div>
+                                <div>
+                                    <Disclosure as="div" className="p-6" defaultOpen={true}>
+                                        <DisclosureButton className="group flex w-full items-center justify-between">
+                                            <span className="text-sm/6 font-medium text-white group-data-hover:text-white/80">
+                                                What is your refund policy?
+                                            </span>
+                                            <RiArrowUpSLine className="size-5  fill-primary group-data-hover:fill-primary/50 group-data-open:rotate-180 transition-all duration-300" />
+                                        </DisclosureButton>
+                                        <DisclosurePanel className="mt-2 text-sm/5 text-white/50 px-8 py-2">
+                                            If you're unhappy with your purchase, we'll refund you in full, by kennthemes to save tons and more to time money projects are listed and outstanding check out <Link to="/" className="text-primary/60 hover:text-primary">Learn more</Link>
+                                        </DisclosurePanel>
+                                    </Disclosure>
+
+                                    <Disclosure as="div" className="p-6">
+                                        <DisclosureButton className="group flex w-full items-center justify-between">
+                                            <span className="text-sm/6 font-medium text-white group-data-hover:text-white/80">
+                                                What is your refund policy?
+                                            </span>
+                                            <RiArrowUpSLine className="size-5  fill-primary group-data-hover:fill-primary/50 group-data-open:rotate-180 transition-all duration-300" />
+                                        </DisclosureButton>
+                                        <DisclosurePanel className="mt-2 text-sm/5 text-white/50 px-8 py-2">
+                                            If you're unhappy with your purchase, we'll refund you in full, by kennthemes to save tons and more to time money projects are listed and outstanding check out <Link to="/" className="text-primary/60 hover:text-primary">Learn more</Link>
+                                        </DisclosurePanel>
+                                    </Disclosure>
+                                </div>
                             </div>
-                            <div>
+                            <div className="bg-secondary-100 p-8 rounded-xl">
                                 FAQ
                             </div>
                         </div>
